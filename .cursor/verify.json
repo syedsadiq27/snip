@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "description": "URL shortener verification gates (FastAPI + SQLite + pytest).",
+  "gates": [
+    {
+      "id": "test",
+      "command": ".venv/bin/python -m pytest -q",
+      "required": true
+    }
+  ],
+  "allow_shell_patterns": [
+    "^git (status|diff|log|show|rev-parse|blame)(\\s|$)",
+    "^ls(\\s|$)",
+    "^rg(\\s|$)",
+    "^\\.venv/bin/python -m pytest(\\s|$)",
+    "^python3? -m pytest(\\s|$)"
+  ]
+}

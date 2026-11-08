@@ -1,0 +1,1 @@
+export { LinkResult } from './LinkResult';
